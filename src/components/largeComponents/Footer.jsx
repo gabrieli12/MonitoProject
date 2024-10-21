@@ -23,12 +23,12 @@ function Footer() {
     <footer className={`w-full bg-footerBg h-full py-7 px-40 max-sm:px-5 max-xl:px-24 max-lg:px-16 relative z-10 rounded-t-[40px] pt-28 ${location.pathname == '/register' || location.pathname == '/forgotPass' ? 'hidden' : 'visible'}`}>
         <div className="w-full bg-darkBlue p-10 max-sm:p-5 flex gap-5 rounded-2xl font-sfpro max-2md:flex-col ">
             <p className="max-w-96 text-2xl max-sm:text-[20px] leading-9 tracking-wider font-bold text-white">Register Now So You Don't Miss Our Programs</p>
-            <div className="bg-white flex justify-between items-center w-full p-3 gap-3 rounded-[14px] max-sm:flex-col" >
+            <div className="bg-white flex justify-between  items-center w-full p-3 gap-3 rounded-[14px] max-sm:flex-col" >
                 <input className="w-full border py-3 px-7 rounded-lg font-sfpro" type="text" placeholder="Enter your Email" />
-                <Button sd={'w-full'} bgColor='bg-darkBlue' textColor='text-white' value='Subscribe Now' radius='rounded-lg' width='max-w-44' borderColor={'border-[#99A2A5]' } />
+                <Button sd={'max-lg:w-full'} bgColor='bg-darkBlue' textColor='text-white' value='Subscribe Now' radius='rounded-lg' width='w-80' borderColor={'border-[#99A2A5]' } />
             </div>
         </div>
-        <div className="flex justify-between py-10 border-b-2 border-[#CCD1D2] max-2md:flex-col max-2md:justify-center max-2md:items-center gap-7">
+        <div className="flex  justify-between py-10 border-b-2 border-[#CCD1D2] max-2md:flex-col max-2md:justify-center max-2md:items-center gap-7">
             <Nav about='About' textColor="text-[#00171F]" notHide={true} isFooter={true} />
             <div className="flex justify-center items-center gap-11">
               <img src={facebook} alt="facebook icon" />
